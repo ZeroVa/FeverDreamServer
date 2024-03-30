@@ -23,7 +23,7 @@ app.get('/generateBackground', async (c) => {
 		}
 	})
 
-	let writtenImage = fs.writeFileSync(`./tmp/bg-${(new Date().toJSON().slice(0,10))}.png`, Buffer.from(data.image, 'base64'))
+	let writtenImage = fs.writeFileSync(`./tmp/bg-${(new Date().getTime())}.png`, Buffer.from(data.image, 'base64'))
 
 	c.status(200)
 	c.header('Content-type', 'image/png')
