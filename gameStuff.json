@@ -12,12 +12,7 @@
 			"dialogue": "The treasure chest looks promising, but it's locked. You wonder what might be inside.",
 			"imageId": "treasureChest",
 			"audioId": "treasureChest"
-		},	{
-			"id": "katana",
-			"dialogue": "A thousand year old katana forged out of steel folded ten thousand times.",
-			"imageId": "katana",
-			"audioId": "katana"
-		},	{
+		}, {
 			"id": "potion",
 			"dialogue": "It smells just like strawberries and gasoline. Your favorite.",
 			"imageId": "potion",
@@ -27,6 +22,11 @@
 			"dialogue": "Looking at it fills you with a desire to create shareholder value.",
 			"imageId": "appleMacintosh",
 			"audioId": "appleMacintosh"
+		},	{
+			"id": "ilya",
+			"dialogue": "I sure wish I was building right now...",
+			"imageId": "ilya",
+			"audioId": "ilya"
 		}
 	]
 }

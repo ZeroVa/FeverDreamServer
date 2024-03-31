@@ -14,8 +14,8 @@ app.get("/generateBackground", async (c) => {
     "https://api.stability.ai/v2beta/stable-image/generate/core",
     {
       prompt:
-        "Point and click adventure scene background image of an empty room in what looks like an art deco apartment building in new york. There is a view of the nyc skyline from one of the small windows in the room. We can see a locked door. in video game art style, the floor should meet the bottom of the back wall 2/3 up from the bottom of the image, 2d, beneath a steel sky style",
-      aspect_ratio: "3:2",
+        "Point and click adventure game scene background image of a furnished room in what looks like an art deco apartment building in new york. There is a view of the nyc skyline from one of the small windows in the room. We can see a locked door. in video game art style, the floor should meet the bottom of the back wall 2/3 up from the bottom of the image, 2d, beneath a steel sky style",
+      aspect_ratio: "1:1",
       negative_prompt: "realism, portrait, 3d, photo",
     },
     {
@@ -42,7 +42,7 @@ app.get("/generateBackground", async (c) => {
 app.get("/bg/:id", async (c) => {
   const imageId = c.req.param("id");
 
-  let image = fs.readFileSync(`./assets/bg/${imageId}.png`);
+  let image = await fs.promises.readFile(`./assets/bg/${imageId}.png`);
   c.status(200);
   c.header("Content-Type", "image/png");
   return c.body(Buffer.from(image));
