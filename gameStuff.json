@@ -1,0 +1,32 @@
+{
+	"backgroundImageId": "bg",
+	"gameObjects": [
+		{
+			"id": "fridge",
+			"dialogue": "You open the fridge and find a bottle of ketchup. It smells rancid so you step away.",
+			"imageId": "fridge",
+			"audioId": "fridge"
+
+		},	{
+			"id": "treasureChest",
+			"dialogue": "The treasure chest looks promising, but it's locked. You wonder what might be inside.",
+			"imageId": "treasureChest",
+			"audioId": "treasureChest"
+		},	{
+			"id": "katana",
+			"dialogue": "A thousand year old katana forged out of steel folded ten thousand times.",
+			"imageId": "katana",
+			"audioId": "katana"
+		},	{
+			"id": "potion",
+			"dialogue": "It smells just like strawberries and gasoline. Your favorite.",
+			"imageId": "potion",
+			"audioId": "potion"
+		},	{
+			"id": "appleMacintosh",
+			"dialogue": "Looking at it fills you with a desire to create shareholder value.",
+			"imageId": "appleMacintosh",
+			"audioId": "appleMacintosh"
+		}
+	]
+}
